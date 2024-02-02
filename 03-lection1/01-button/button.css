@@ -1,1 +1,41 @@
-/* Стилизация кнопки */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  width: 182px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--primary-color-blue);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2342c0;
+}
+
+button:disabled {
+  opacity: 50%;
+  cursor: not-allowed;
+}
+
+.button_secondary {
+  background-color: var(--primary-color-purple);
+}
+
+.button_secondary:hover {
+  background-color: #5028c6;
+}
+
+.button_alternate {
+  border: 1px solid var(--color-gray-3);
+  color: var(--color-gray-4);
+  background-color: #fff;
+}
+
+.button_alternate:hover {
+  background-color: #fff;
+  border: 1px solid var(--color-black);
+  color: var(--color-gray-4);
+}
